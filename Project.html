@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    #home{
+    height: 100%;
+    width: 100%;
+    background: url(carimg.jpg);
+    margin: auto;
+    padding: 0%;
+    background-size: cover;
+    display: block;
+
+  }
+  .heading{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+ }
+ .heading h1{
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px;
+  color:0,0,0,0.7;
+ }
+ .heading p{
+   font-size: 20px;
+ }
+ .heading button{
+  background-color: red;
+   color: white;
+  }
+  .card-body{
+   padding: 10px;
+  }
+ .card p{
+  margin-bottom: 5px;
+ }
+.btn{
+  padding: 5px 10px;
+  }
+ .card img{
+    height: 100px;
+    width: 100%;
+   object-fit: cover;
+   
+ }
+    
+      
+   
+    
+    </style>
+</head>
+<body>
+    <nav id="navbar-example" class="navbar navbar-dark bg-dark fixed-top px-4">
+  <a class="navbar-brand" href="#">Car Toys</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#cars">Cars</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#cart">Cart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+<a href="cart.html">Cart</a>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="70" tabindex="0"></body>
+<div  style="margin-top:0px">
+
+  <!-- HOME -->
+  <section id="home" class="p-5 bg-light" style="height: 100vh";>
+  <div class="heading">
+      <h1>Customized car Toys</h1>
+      <p>Design your dream car toys</p>
+        <button>Shop Now</button>
+  </div>
+    
+    
+  </section>
+
+  <!-- CARS -->
+  <section id="cars" class="p-5 bg-secondary text-white" style="height:100vh">
+    <h1 class="text-center">CARS</h1>
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+  <img src="nexon.jpg.jpeg" class="card-img-top" style="height: 165px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Tata Nexon</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#" onclick="addToCart('Nexon', 1000, 'nexon.jpg.jpeg')" class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+  <img src="hotwheels.jpg.jpeg" class="card-img-top" style="height: 165px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Hot Wheels</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#"  onclick="addToCart('Hotwheels', 1000, 'hotwheels.jpg.jpeg')"class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+  <img src="punch.jpg.jpeg" class="card-img-top" style="height: 165px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Tata Punch</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#"  onclick="addToCart('Punch', 1000, 'punch.jpg.jpeg')"class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+      </div>
+       <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+  <img src="thar1.jpg.jpeg" class="card-img-top" style="height: 165px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Mahindra Thar</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#" onclick="addToCart('Thar1', 1000, 'thar1.jpg.jpeg')" class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+      </div>
+     
+
+    </div>
+
+  </div>  
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+    <div class="col-lg-3">
+    <div class="card" style="width: 16rem;">
+  <img src="skoda.jpg.jpeg" class="card-img-top" style="height: 153px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Skoda Kylag</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#"  onclick="addToCart('skoda', 1000, 'skoda.jpg.jpeg')"class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+    </div>
+    <div class="col-lg-3">
+    <div class="card" style="width: 16rem;">
+  <img src="kushaq.jpg.jpeg" class="card-img-top" style="height: 153px; object-fit: cover;" >
+  <div class="card-body p-1">
+    <h5 class="card-title">Skoda kushaq</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#"  onclick="addToCart('kushaq', 1000, 'kushaq.jpg.jpeg')"class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+    </div>
+    <div class="col-lg-3">
+    <div class="card" style="width: 16rem;">
+  <img src="toyota.jpg.jpeg" class="card-img-top" style="height: 153px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Toyota Hyryder</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#" onclick="addToCart('toyota', 1000, 'toyota.jpg.jpeg')" class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+    </div>
+    <div class="col-lg-3">
+     <div class="card" style="width: 16rem;">
+  <img src="fronx.jpg.jpeg" class="card-img-top" style="height: 153px; object-fit: cover;">
+  <div class="card-body p-1">
+    <h5 class="card-title">Fronx</h5>
+    <p class="card-text">1.32 Scale Die-Cast Metal Toy Car.</p>
+    <p>$1000</p>
+    <a href="#"  onclick="addToCart('fronx', 1000, 'fronx.jpg.jpeg')" class="btn btn-primary">Add to Cart</a>
+    <button class="btn btn-success px-4">Buy Now</button>
+  </div>
+</div>
+
+    </div>
+    </div>
+
+  </div>
+  </section>
+
+  <script>
+
+function addToCart(name, price, image){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+       name: name,
+       price: price,
+       image: image
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added To Cart");
+}
+
+</script>
+
+ 
+
+    <!-- CART -->
+  <section id="cart" class="p-5 bg-info" style="height:100vh">
+  <h1 class="text-center">My Cart</h1>
+
+  <div id="cart-items" class="row"></div>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let container = document.getElementById("cart-items");
+
+cart.forEach(item => {
+
+    container.innerHTML += `
+
+    
+
+    <div class="card m-3" style="width:12rem">
+
+        <img src="${item.image}" class="card-img-top  object-fit:cover;">
+
+        <div class="card-body">
+
+            <h5>${item.name}</h5>
+
+            <p>₹${item.price}</p>
+
+            <button class="btn btn-success btn-sm px-2 py-1">
+            Buy Now
+            </button>
+
+        </div>
+
+    </div>
+    
+
+    `;
+
+});
+
+</script>
+
+ 
+  </section>
+
+  <!-- CONTACT -->
+ 
+<section id="contact" class="p-5 bg-dark text-white">
+ <div class="container">
+ <h1 class="text-center mb-4">Contact Us</h1>
+ <p>Need help? contact our support team anytime!</p>
+ <div class="card p-4">
+
+  <form>
+
+  <input type="text"
+  class="form-control mb-3"
+ placeholder="Enter your name">
+<input type="email"
+ class="form-control mb-3"
+ placeholder="Enter your email">
+ <textarea class="form-control mb-3"
+ rows="5"
+placeholder="Enter your message"></textarea>
+<button class="btn btn-primary w-100">
+ Send Message
+ </button>
+</form>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+document.querySelector("form").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    alert("Message Sent Successfully");
+
+});
+
+</script>
+</body>
+</html>
